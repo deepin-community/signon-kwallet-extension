@@ -1,0 +1,279 @@
+signon-kwallet-extension (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:41:31 +0900
+
+signon-kwallet-extension (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 22:59:46 +0900
+
+signon-kwallet-extension (4:20.12.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + signon-kwallet-extension: Add Multi-Arch: same.
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Bump Standards-Version to 4.5.1, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 09 Jan 2021 13:40:21 +0100
+
+signon-kwallet-extension (4:20.08.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.0
+    - bump Qt packages to 5.6.0
+    - bump KF packages to 5.18.0
+  * Drop the migration from signon-kwallet-extension-dbg, no more needed after
+    two Debian stable releases.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper build dependency to debhelper-compat 13
+    - remove debian/compat
+    - remove the dh_makeshlibs override, as now plugins are properly ignored
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Add the configuration for the CI on salsa.
+  * Update the upstream GPG signing key.
+  * Use https for Format in copyright.
+  * Remove unused dh_auto_test override, as there are no tests anyway.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 14 Aug 2020 07:58:50 +0200
+
+signon-kwallet-extension (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+
+  [ Pino Toscano ]
+  * New upstream release.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Simplify watch file, and switch it to https.
+  * Update lintian overrides.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 06 Dec 2017 07:38:01 +0100
+
+signon-kwallet-extension (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:06:54 +0000
+
+signon-kwallet-extension (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:50:11 +0000
+
+signon-kwallet-extension (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:26:58 +0000
+
+signon-kwallet-extension (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:25:24 +0000
+
+signon-kwallet-extension (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:29:37 +0000
+
+signon-kwallet-extension (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:07:32 +0000
+
+signon-kwallet-extension (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:52:21 +0000
+
+signon-kwallet-extension (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 17:05:20 +0000
+
+signon-kwallet-extension (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:27:28 +0000
+
+signon-kwallet-extension (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:34:09 +0000
+
+signon-kwallet-extension (4:16.08.3-1) unstable; urgency=medium
+
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 22:08:04 +0100
+
+signon-kwallet-extension (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:55:15 +0000
+
+signon-kwallet-extension (4:16.08.2-1) unstable; urgency=medium
+
+  * New upstream release (16.08.2)
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 14:59:15 +0200
+
+signon-kwallet-extension (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:41:59 +0000
+
+signon-kwallet-extension (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:08:57 +0000
+
+signon-kwallet-extension (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:51:12 +0000
+
+signon-kwallet-extension (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 05 Aug 2016 13:03:12 +0000
+
+signon-kwallet-extension (4:16.04.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 21 Jun 2016 09:02:31 +0200
+
+signon-kwallet-extension (4:16.04.1-1) unstable; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Add a .gitattributes file to use dpkg-mergechangelogs
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 May 2016 10:16:50 +0200
+
+signon-kwallet-extension (4:15.12.1-1) experimental; urgency=medium
+
+  [ Debian Qt/KDE Maintainers ]
+  * New upstream release (15.12.0).
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:23:14 +0100
+
+signon-kwallet-extension (4:15.08.3-1) unstable; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:39:15 +0100
+
+signon-kwallet-extension (4:15.08.2-1) unstable; urgency=medium
+
+  * New upstream release (15.08.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 16 Oct 2015 08:07:11 +0200
+
+signon-kwallet-extension (4:15.08.2-0ubuntu1) wily; urgency=medium
+
+  * Vivid backport
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 14 Oct 2015 13:07:20 +0100
+
+signon-kwallet-extension (4:15.08.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Diane Trout <diane@debian.org>  Sun, 20 Sep 2015 20:19:43 -0700
+
+signon-kwallet-extension (4:15.08.1-0ubuntu1) wily; urgency=medium
+
+  * New upstream release (15.08.1)
+
+ -- Clive Johnston <clivejo@aol.com>  Tue, 22 Sep 2015 17:47:04 +0100
+
+signon-kwallet-extension (4:15.08.0-1) unstable; urgency=medium
+
+  [ Maximiliano Curia ]
+  * Prepare initial Debian release.
+  * New upstream release (15.04.2).
+
+  [ Diane Trout ]
+  * New upstream release (15.08.0).
+  * Add myself as Uploader.
+  * Remove XS-Testsuite: autopkgtest. That's now default behavior.
+  * Update Standards-Version to 3.9.6. No changes needed.
+  * Add homepage.
+  * Remove Priority: extra section from -dbg package control block.
+
+ -- Diane Trout <diane@debian.org>  Wed, 09 Sep 2015 21:15:42 -0700
+
+signon-kwallet-extension (4:15.08.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Wed, 26 Aug 2015 18:22:51 +0100
+
+signon-kwallet-extension (4:15.07.90-0ubuntu1) wily; urgency=medium
+
+  * new upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Aug 2015 12:33:41 +0100
+
+signon-kwallet-extension (4:15.04.2-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release.
+  * Add watch file
+  * wrap-and-sort
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Jun 2015 22:44:03 +0200
