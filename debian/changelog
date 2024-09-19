@@ -1,3 +1,48 @@
+signon-kwallet-extension (4:22.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 01 Mar 2023 11:58:07 +0100
+
+signon-kwallet-extension (4:22.12.1-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.1).
+  * Bump Standards-Version to 4.6.2, no change required.
+  * Add/update Albert Astals Cid’s master key in upstream signing keys.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 06 Jan 2023 23:41:29 +0100
+
+signon-kwallet-extension (4:22.12.0-2) unstable; urgency=medium
+
+  * Upload with a correctly released changelog.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Dec 2022 16:05:05 +0100
+
+signon-kwallet-extension (4:22.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.6.1, no change required.
+  * New upstream release (22.11.90).
+  * New upstream release (22.12.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Dec 2022 00:13:10 +0100
+
+signon-kwallet-extension (4:21.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (21.12.3).
+  * Bump Standards-Version to 4.6.0, no change required.
+  * Added myself to the uploaders.
+  * Build with hardening=+all build hardening flag.
+  * Refresh upstream metadata.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Thu, 07 Apr 2022 23:22:49 +0200
+
 signon-kwallet-extension (4:21.08.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]

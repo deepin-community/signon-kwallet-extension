@@ -10,8 +10,16 @@ add_library(libkeyring-kwallet MODULE ${kwalletsignon5_SRCS})
 
 set_target_properties(libkeyring-kwallet PROPERTIES PREFIX "")
 target_link_libraries(libkeyring-kwallet
-    Qt5::Core
+    Qt::Core
     KF5::Wallet
     ${SIGNONEXTENSION_LIBRARIES})
 
-install(TARGETS libkeyring-kwallet DESTINATION ${SIGNONEXTENSION_PLUGINDIR})
+if(INSTALL_BROKEN_SIGNON_EXTENSION)
+  set(OVERRIDDEN_SIGNONEXTENSION_PLUGINDIR ${CMAKE_INSTALL_PREFIX}/lib/signon/extensions/)
+  if (NOT OVERRIDDEN_SIGNONEXTENSION_PLUGINDIR STREQUAL SIGNONEXTENSION_PLUGINDIR)
+    message(WARNING "INSTALL_BROKEN_SIGNON_EXTENSION is enabled. Files will be installed to ${OVERRIDDEN_SIGNONEXTENSION_PLUGINDIR} instead of ${SIGNONEXTENSION_PLUGINDIR}")
+  endif()
+  install(TARGETS libkeyring-kwallet DESTINATION ${OVERRIDDEN_SIGNONEXTENSION_PLUGINDIR})
+else()
+  install(TARGETS libkeyring-kwallet DESTINATION ${SIGNONEXTENSION_PLUGINDIR})
+endif()
